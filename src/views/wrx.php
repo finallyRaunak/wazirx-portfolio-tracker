@@ -1,4 +1,4 @@
-<?php
+Portfolio<?php
 //for profit
 if (!empty($invests) && ($total_profit >= 0)) {
     $wdgetIcon = 'fa-arrow-alt-circle-up text-success-light';
@@ -26,22 +26,22 @@ else {
                 <div class="bg-body-light">
                     <div class="content content-full">
                         <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
-                            <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">WazirX Porfolio Tracker</h1>
+                            <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">WazirX Portfolio Tracker</h1>
                             <ul class="nav-main nav-main-horizontal">
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="https://github.com/finallyRaunak/wazirx-porfolio-tracker">
+                                    <a class="nav-main-link" href="https://github.com/finallyRaunak/wazirx-portfolio-tracker">
                                         <i class="nav-main-link-icon fab fa-2x fa-github"></i>
                                         <span class="nav-main-link-name">Github</span>
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="https://github.com/finallyRaunak/wazirx-porfolio-tracker/issues/new?labels=bug">
+                                    <a class="nav-main-link" href="https://github.com/finallyRaunak/wazirx-portfolio-tracker/issues/new?labels=bug">
                                         <i class="nav-main-link-icon fa fa-2x fa-bug"></i>
                                         <span class="nav-main-link-name">Report a Bug</span>
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="https://github.com/finallyRaunak/wazirx-porfolio-tracker/discussions/new?category=ideas">
+                                    <a class="nav-main-link" href="https://github.com/finallyRaunak/wazirx-portfolio-tracker/discussions/new?category=ideas">
                                         <i class="nav-main-link-icon far fa-2x fa-lightbulb"></i>
                                         <span class="nav-main-link-name">Suggest a New Feature</span>
                                     </a>
@@ -180,7 +180,7 @@ else {
                                     This tool is still in the beta phase. If you found any discrepancy or error or an issue then please let me via this form or you can DM me on Twitter.
                                 </li>
                             </ul>
-                            <p class="text-muted">Disclaimer: This is an <strong>unofficial</strong> WazirX Porfolio Tracker which enhances the wallet user experience. Brand and copyright of the word "WazirX" belongs to WazirX (https://wazirx.com).<p>
+                            <p class="text-muted">Disclaimer: This is an <strong>unofficial</strong> WazirX Portfolio Tracker which enhances the wallet user experience. Brand and copyright of the word "WazirX" belongs to WazirX (https://wazirx.com).<p>
                         </div>
                     </div>
                 </div>

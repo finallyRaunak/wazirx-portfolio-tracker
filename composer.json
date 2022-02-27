@@ -1,14 +1,14 @@
-{
-    "name": "finally-raunak/wazirx-porfolio-tracker",
+portfolio{
+    "name": "finally-raunak/wazirx-portfolio-tracker",
     "description": "Free and open source solution to track your Wazirx Portfolio",
-    "homepage": "https://github.com/finallyRaunak/wazirx-porfolio-tracker/",
+    "homepage": "https://github.com/finallyRaunak/wazirx-portfolio-tracker/",
     "type":"project",
     "readme": "./README.md",
     "keywords": [
         "wazirx",
         "wazirx-php-sdk",
         "crypto",
-        "porfolio-tracker"
+        "portfolio-tracker"
     ],
     "license": "MIT",
     "authors": [
@@ -47,8 +47,8 @@
         "clear:cache": "Clear or remove all the crypto cached information."
     },
     "support": {
-        "issues": "https://github.com/finallyRaunak/wazirx-porfolio-tracker/issues",
-        "forum": "https://github.com/finallyRaunak/wazirx-porfolio-tracker/discussions",
-        "docs": "https://github.com/finallyRaunak/wazirx-porfolio-tracker/blob/main/doc/README.md"
+        "issues": "https://github.com/finallyRaunak/wazirx-portfolio-tracker/issues",
+        "forum": "https://github.com/finallyRaunak/wazirx-portfolio-tracker/discussions",
+        "docs": "https://github.com/finallyRaunak/wazirx-portfolio-tracker/blob/main/doc/README.md"
     }
 }
