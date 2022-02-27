@@ -1,0 +1,54 @@
+{
+    "name": "finally-raunak/wazirx-porfolio-tracker",
+    "description": "Free and open source solution to track your Wazirx Portfolio",
+    "homepage": "https://github.com/finallyRaunak/wazirx-porfolio-tracker/",
+    "type":"project",
+    "readme": "./README.md",
+    "keywords": [
+        "wazirx",
+        "wazirx-php-sdk",
+        "crypto",
+        "porfolio-tracker"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raunak Gupta",
+            "email": "raunak.gupta@webhat.in",
+            "homepage": "https://www.webhat.in/article/author/raunak-gupta/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "phpfastcache/phpfastcache": "^8.1",
+        "ext-curl": "*",
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BalanceSheet\\": "src/"
+        },
+        "files": [
+            "src/constants.php",
+            "src/utility.php"
+        ]
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0.0"
+    },
+    "scripts": {
+        "lint": "./vendor/bin/php-cs-fixer fix -vvv --dry-run --show-progress=dots",
+        "lint:fix": "./vendor/bin/php-cs-fixer fix -vvv --show-progress=dots",
+        "clear:cache": "rm -rf ./src/cache/*"
+    },
+    "scripts-descriptions": {
+        "lint": "Run the php-cs-fixer script and list all the errors, which voiles defined rules.",
+        "lint:fix": "Run the php-cs-fixer script and auto fix all the errors, which voiles defined rules.",
+        "clear:cache": "Clear or remove all the crypto cached information."
+    },
+    "support": {
+        "issues": "https://github.com/finallyRaunak/wazirx-porfolio-tracker/issues",
+        "forum": "https://github.com/finallyRaunak/wazirx-porfolio-tracker/discussions",
+        "docs": "https://github.com/finallyRaunak/wazirx-porfolio-tracker/blob/main/doc/README.md"
+    }
+}
