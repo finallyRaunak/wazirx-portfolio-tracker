@@ -1,4 +1,4 @@
-Portfolio<?php
+<?php
 //for profit
 if (!empty($invests) && ($total_profit >= 0)) {
     $wdgetIcon = 'fa-arrow-alt-circle-up text-success-light';
