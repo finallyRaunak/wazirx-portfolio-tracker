@@ -76,7 +76,7 @@ else {
                             <!-- Inline Layout -->
                             <div class="row push">
                                 <div class="col-lg-12">
-                                    <p>To use this tool you have to get the WazirX API credentials from <a href="https://wazirx.com/blog/create-wazirx-api-key/" target="_blank">here</a>. after getting that copy-paste it over here <em>also store it at your end for future use</em>.</p>
+                                    <p>To use this tool you have to get the WazirX API credentials from <a href="https://wazirx.com/blog/create-wazirx-api-key/" target="_blank" rel="nofollow" title="How to create WazirX API Key?">here</a>. after getting that copy-paste it over here <em>also store it at your end for future use</em>.</p>
                                     <p>Select the currency/trading pair that you generally use for buying crypto then fill the API Key and API Secret and hit the "Fetch Orders" button. That's it within a few seconds it will pull all the orders and will do a heavy calculation in the backend and will display the report below.</p>
                                 </div>
                                 <div class="col-lg-12 space-y-2">
@@ -177,7 +177,7 @@ else {
                                     <span class="fa-li">
                                         <i class="fa fa-arrow-right"></i>
                                     </span>
-                                    This tool is still in the beta phase. If you found any discrepancy or error or an issue then please let me via this form or you can DM me on Twitter.
+                                    This tool is still in the beta phase. If you found any discrepancy or error or an issue then please let me via <a href="https://github.com/finallyRaunak/wazirx-portfolio-tracker/issues/new?labels=bug" target="_blank" rel="nofollow" title="Reort an issue.">this form</a> or you can DM me on <a href="https://twitter.com/__raunakGupta" target="_blank" rel="nofollow" title="Follow me on Twitter">Twitter</a>.
                                 </li>
                             </ul>
                             <p class="text-muted">Disclaimer: This is an <strong>unofficial</strong> WazirX Portfolio Tracker which enhances the wallet user experience. Brand and copyright of the word "WazirX" belongs to WazirX (https://wazirx.com).<p>
