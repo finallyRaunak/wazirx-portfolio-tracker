@@ -76,7 +76,7 @@ else {
                             <!-- Inline Layout -->
                             <div class="row push">
                                 <div class="col-lg-12">
-                                    <p>To use this tool you have to get the WazirX API credentials from <a href="#" target="_blank">here</a>. after getting that copy-paste it over here <em>also store it at your end for future use</em>.</p>
+                                    <p>To use this tool you have to get the WazirX API credentials from <a href="https://wazirx.com/blog/create-wazirx-api-key/" target="_blank">here</a>. after getting that copy-paste it over here <em>also store it at your end for future use</em>.</p>
                                     <p>Select the currency/trading pair that you generally use for buying crypto then fill the API Key and API Secret and hit the "Fetch Orders" button. That's it within a few seconds it will pull all the orders and will do a heavy calculation in the backend and will display the report below.</p>
                                 </div>
                                 <div class="col-lg-12 space-y-2">
