@@ -95,7 +95,7 @@ else {
                                             <input type="text" class="form-control" name="api_key" placeholder="API Key" required value="<?= !empty($_SESSION['api_key']) ? $_SESSION['api_key'] : ''; ?>"/>
                                         </div>
                                         <div class="col-lg-3 col-xl-3">
-                                            <input type="text" class="form-control" name="api_secret" placeholder="API Secret" required value="<?= !empty($_SESSION['api_secret']) ? $_SESSION['api_secret'] : ''; ?>"/>
+                                            <input type="password" class="form-control" name="api_secret" placeholder="API Secret" required value="<?= !empty($_SESSION['api_secret']) ? $_SESSION['api_secret'] : ''; ?>"/>
                                         </div>
                                         <div class="col-lg-3 col-xl-3">
                                             <button type="submit" class="btn btn-hero btn-primary" data-toggle="click-ripple" name="consent" value="yes">
@@ -180,7 +180,7 @@ else {
                                     This tool is still in the beta phase. If you found any discrepancy or error or an issue then please let me via <a href="https://github.com/finallyRaunak/wazirx-portfolio-tracker/issues/new?labels=bug" target="_blank" rel="nofollow" title="Reort an issue.">this form</a> or you can DM me on <a href="https://twitter.com/__raunakGupta" target="_blank" rel="nofollow" title="Follow me on Twitter">Twitter</a>.
                                 </li>
                             </ul>
-                            <p class="text-muted">Disclaimer: This is an <strong>unofficial</strong> WazirX Portfolio Tracker which enhances the wallet user experience. Brand and copyright of the word "WazirX" belongs to WazirX (https://wazirx.com).<p>
+                            <p class="text-muted">Disclaimer: This is an <strong>unofficial</strong> WazirX Portfolio Tracker which enhances the wallet user experience. The brand and copyright of the word "WazirX" belong to WazirX (https://wazirx.com).<p>
                         </div>
                     </div>
                 </div>
