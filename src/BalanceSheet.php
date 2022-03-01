@@ -201,7 +201,7 @@ class BalanceSheet
             'invests' => $cards,
             'avg_percentage' => round(($totalPer / $ctr), 2, PHP_ROUND_HALF_UP),
             'total_profit' => round($totalProfit, 2, PHP_ROUND_HALF_UP),
-            'total_crypto' => ($ctr + 1),
+            'total_crypto' => $ctr,
             'wallet_balance' => $usableBalance,
             'csrf_token' => generateCSRFToken(),
         ]);
