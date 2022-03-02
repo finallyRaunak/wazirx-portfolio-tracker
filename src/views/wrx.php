@@ -2,13 +2,13 @@
 //for profit
 if (!empty($invests) && ($total_profit >= 0)) {
     $wdgetIcon = 'fa-arrow-alt-circle-up text-success-light';
-    $wdgetTxt = 'Profit %';
+    $wdgetTxt = 'Percentage Gain';
     $wdgetClass = 'bg-success';
 }
 //for loss
 else {
     $wdgetIcon = 'fa-arrow-alt-circle-down text-success-light';
-    $wdgetTxt = 'Loss %';
+    $wdgetTxt = 'Percentage Lose';
     $wdgetClass = 'bg-danger';
 }
 ?>

@@ -11,8 +11,8 @@
                     <th class="text-center" style="width 80px;">#</th>
                     <th>Crypto</th>
                     <th>Qty</th>
-                    <th>Invested</th>
-                    <th>Current</th>
+                    <th>Total Invested</th>
+                    <th>Current Value</th>
                     <th>Returns</th>
                     <th>Returns %</th>
                     <th>Avg. Buying Price</th>
