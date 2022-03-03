@@ -8,6 +8,7 @@ Free and open source solution to track your Wazirx Portfolio
 - Extract the zip
 - From cli cd to the extracted dir
 - run composer install
+- Update the `BASE_URL` in `src/constants.php` file.
 
 # Donate
 
@@ -16,7 +17,6 @@ Free and open source solution to track your Wazirx Portfolio
 | BUSD     | BEP20   | `0x4Fabb145d64652a948d72533023f6E7A623C7C53` |
 | USDT     | BEP20   |                                              |
 | USDT     | TRC20   |                                              |
-
 
 
 # Disclaimer 
