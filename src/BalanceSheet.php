@@ -7,6 +7,8 @@ use Phpfastcache\Exceptions\PhpfastcacheLogicException;
 
 class BalanceSheet
 {
+    private $orderArr;
+
     public function index()
     {
         $this->render_view('wrx', [
@@ -75,8 +77,8 @@ class BalanceSheet
                 if ($crypto == 'wrx' && $base == 'wrx') {
                     continue;
                 }
-                $location = array_search($crypto.$base, array_column($tickers, 'symbol'));
-                $price[$crypto.'/'.$base]['current_price'] = $tickers[$location]['bidPrice'];
+                $location = array_search($crypto . $base, array_column($tickers, 'symbol'));
+                $price[$crypto . '/' . $base]['current_price'] = $tickers[$location]['bidPrice'];
             }
         }
 
@@ -112,10 +114,14 @@ class BalanceSheet
     {
         $price = [];
         foreach ($tradingPair as $base) {
-            if (!$wrx->isValidTradingPair($crypto.$base)) {
+            $this->orderArr = [];
+
+            if (!$wrx->isValidTradingPair($crypto . $base)) {
                 continue;
             }
-            $orders = $wrx->getOrders($crypto.$base);
+
+            $orders = $this->getSequentialOrders($wrx, $crypto . $base, 0);
+
             $qty = $invest = 0;
             if (empty($orders) || (!empty($orders['code']) && ($orders['code'] == 1999))) {
                 continue;
@@ -141,11 +147,11 @@ class BalanceSheet
             if (empty($qty)) {
                 continue;
             }
-            $price[$crypto.'/'.$base] = [
+            $price[$crypto . '/' . $base] = [
                 'dca' => $invest / $qty,
                 'qty' => $qty,
             ];
-            $price[$crypto.'/'.$base]['investment'] = $price[$crypto.'/'.$base]['dca'] * $price[$crypto.'/'.$base]['qty'];
+            $price[$crypto . '/' . $base]['investment'] = $price[$crypto . '/' . $base]['dca'] * $price[$crypto . '/' . $base]['qty'];
         }
 
         return $price;
@@ -216,6 +222,23 @@ class BalanceSheet
     public function render_view(string $view, array $data = []): void
     {
         extract($data);
-        require 'views/'.$view.'.php';
+        require 'views/' . $view . '.php';
+    }
+
+    private function getSequentialOrders($wrx, string $symbol, int $fromOrderID)
+    {
+        $orders = $wrx->getOrders($symbol, ($fromOrderID + 1));
+        if (empty($orders) || (!empty($orders['code']) && ($orders['code'] == 1999))) {
+            return $this->orderArr;
+        }
+
+        $this->orderArr = array_merge($this->orderArr, $orders);
+        if (count($orders) == 1000) {
+            $this->orderArr = array_merge($this->orderArr, $orders);
+            $fromOrderID = $orders[count($orders) - 1]['id'];
+            $this->getSequentialOrders($wrx, $symbol, $fromOrderID);
+        }
+
+        return $this->orderArr;
     }
 }

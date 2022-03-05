@@ -50,7 +50,7 @@ final class Wrx
     protected function __construct(string $apiKey = null, string $apiSecret = null)
     {
         CacheManager::setDefaultConfig(new ConfigurationOption([
-                    'path' => __DIR__.DIRECTORY_SEPARATOR.'cache',
+                    'path' => __DIR__ . DIRECTORY_SEPARATOR . 'cache',
                     'defaultChmod' => 0755,
                     'itemDetailedDate' => true,
         ]));
@@ -98,7 +98,7 @@ final class Wrx
      */
     public function getFunds(): array
     {
-        $cacheKey = md5($this->apiKey).'-funds';
+        $cacheKey = md5($this->apiKey) . '-funds';
 
         $this->fields = [
             'timestamp' => round(microtime(true) * 1000),
@@ -108,7 +108,7 @@ final class Wrx
         $this->fields['signature'] = hash_hmac('sha256', http_build_query($this->fields), $this->apiSecret);
 
         $this->headers = [
-            'X-Api-Key: '.$this->apiKey,
+            'X-Api-Key: ' . $this->apiKey,
             'Content-Type: application/x-www-form-urlencoded',
         ];
 
@@ -129,7 +129,7 @@ final class Wrx
      */
     private function removeDust(string $cacheKey): array
     {
-        $cachedStr = $this->cacheAdapter->getItem($cacheKey.'-actual');
+        $cachedStr = $this->cacheAdapter->getItem($cacheKey . '-actual');
 
         if ($cachedStr->isHit()) {
             return $cachedStr->get();
@@ -165,7 +165,7 @@ final class Wrx
      */
     public function ticker(string $symbol): array
     {
-        $cacheKey = 'ticker-'.$symbol;
+        $cacheKey = 'ticker-' . $symbol;
         $this->fields = [
             'symbol' => $symbol,
         ];
@@ -198,27 +198,30 @@ final class Wrx
      * Method to return all the orders of a specific trading pair like BTCINR, BTTCUSDT, etc., from WazirX.
      *
      * @param string $symbol
+     * @param int $orderId
+     *
      * @return array
      * @throws PhpfastcacheInvalidArgumentException
      * @throws PhpfastcacheLogicException
      * @throws \Psr\Cache\InvalidArgumentException
      */
-    public function getOrders(string $symbol): array
+    public function getOrders(string $symbol, int $orderId = 0): array
     {
-        $cacheKey = md5($this->apiKey).'-'.$symbol.'-order';
+        $cacheKey = md5($this->apiKey) . '-' . $symbol . '-order-' . $orderId;
 
         $this->fields = [
             'symbol' => $symbol,
             'timestamp' => round(microtime(true) * 1000),
             'recvWindow' => 60000,
             'limit' => 1000,
+            'orderId' => $orderId,
         ];
         $encodedPayload = hash_hmac('sha256', http_build_query($this->fields), $this->apiSecret);
 
         $this->fields['signature'] = $encodedPayload;
 
         $this->headers = [
-            'X-Api-Key: '.$this->apiKey,
+            'X-Api-Key: ' . $this->apiKey,
             'Content-Type: application/x-www-form-urlencoded',
         ];
 
@@ -247,7 +250,7 @@ final class Wrx
         }
         sleep(2);
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $this->apiURL.$path);
+        curl_setopt($ch, CURLOPT_URL, $this->apiURL . $path);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
         curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
         curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);

@@ -13,7 +13,7 @@ function pr($param = [], $continue = true, string $label = null)
         return null;
     }
     if (!empty($label)) {
-        echo '<p>-- '.$label.' --</p>';
+        echo '<p>-- ' . $label . ' --</p>';
     }
 
     echo '<pre>';
@@ -58,7 +58,7 @@ function getHeaders($respHeaders): array
  */
 function getSiteURL(string $uri = '/'): string
 {
-    return rtrim(BASE_URL, '/').'/'.ltrim($uri, '/');
+    return rtrim(BASE_URL, '/') . '/' . ltrim($uri, '/');
 }
 
 /**
@@ -68,7 +68,7 @@ function getSiteURL(string $uri = '/'): string
  */
 function getAssetURI(string $uri): string
 {
-    return rtrim(getSiteURL(), '/').'/src/views/'.ltrim($uri, '/');
+    return rtrim(getSiteURL(), '/') . '/src/views/' . ltrim($uri, '/');
 }
 
 /**
