@@ -8,14 +8,14 @@ Are you using WazirX for cryptocurrency trading? If yes, then you know that it o
 So you can use this tool to get that details.
 
 Oh, that's great but for this do I have to spin a server and install it?  
-If you want you can do that but you can use [this link](), where I have already made it accessible for all the non-technical people.
+If you want you can do that but you can use [this link](https://www.webhat.in/wazirx-portfolio-tracker/), where I have already made it accessible for all the non-technical people.
 
 ### Features include:
 
 Track all your crypto assets growth of WazirX exchange in one go. You can filter it or order/sort it based on profit, amount spend, etc.  
 
 Oh, that's great, but I think it is missing this thing, or if you can add this it will make much more sense.  
-Sure, please let me know [here](https://github.com/finallyRaunak/wazirx-portfolio-tracker/discussions/new) so that I can review and see how it can be incorporated.
+Sure, please let me know [here](https://github.com/finallyRaunak/wazirx-portfolio-tracker/discussions/new?category=ideas) so that I can review and see how it can be incorporated.
 
 ### Why this?
 
@@ -23,7 +23,7 @@ It is a simple tool to take a quick snap of your portfolio.
 
 # Demo
 
-- You can see a live preview from [here]()
+- You can see a live preview from [here](https://www.webhat.in/wazirx-portfolio-tracker/)
 - You can also check this [screenshot](screenshots/full-page-view.png)
 
 # Installation
@@ -31,7 +31,7 @@ It is a simple tool to take a quick snap of your portfolio.
 - Download the zip
 - Extract the zip
 - From CLI cd to the extracted dir
-- run composer install
+- run `composer install --no-dev`
 - Update the `BASE_URL` in `src/constants.php` file.
 - Now Navigate to your site (_which you have defined in `BASE_URL`_) and see the report.
 

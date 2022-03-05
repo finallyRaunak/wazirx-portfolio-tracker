@@ -47,7 +47,7 @@ else {
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="javascript:void(0)">
+                                    <a class="nav-main-link" href="https://github.com/finallyRaunak/wazirx-portfolio-tracker#donate">
                                         <i class="nav-main-link-icon fab fa-2x fa-bitcoin"></i>
                                         <span class="nav-main-link-name">Donate</span>
                                     </a>
