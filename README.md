@@ -21,12 +21,12 @@ Sure, please let me know [here](https://github.com/finallyRaunak/wazirx-portfoli
 
 It is a simple tool to take a quick snap of your portfolio.
 
-# Demo
+## Demo
 
 - You can see a live preview from [here](https://www.webhat.in/wazirx-portfolio-tracker/)
 - You can also check this [screenshot](screenshots/full-page-view.png)
 
-# Installation
+## Installation
 
 - Download the zip
 - Extract the zip
@@ -35,9 +35,9 @@ It is a simple tool to take a quick snap of your portfolio.
 - Update the `BASE_URL` in `src/constants.php` file.
 - Now Navigate to your site (_which you have defined in `BASE_URL`_) and see the report.
 
-# Donate
+## Donate
 
-Like it? considering donating a few dollars (even 1 USDT) keeps us motivated to build such a tool that can ease up your crypto journey.  
+Like it? considering donating a few dollars (_even 1 USDT_) keeps us motivated to build such a tool that can ease up your crypto journey.  
 You can donate to the below given address.
 
 | Currency | Network | Address                                      |
@@ -49,11 +49,11 @@ You can donate to the below given address.
 | USDT     | TRC20   | `TQVWzF8iXmYSwNmAkBNfKMpv9YwRjSWXtq`         |
 
 
-# Disclaimer 
+## Disclaimer 
 
 - This is an unofficial WazirX Portfolio Tracker which enhances the wallet user experience. The brand and copyright of the word "WazirX" belong to WazirX (https://wazirx.com).
 - I do not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your due diligence and consult your financial advisor before making any investment decisions.
 
-# License
+## License
 
 wazirx-portfolio-tracker is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
