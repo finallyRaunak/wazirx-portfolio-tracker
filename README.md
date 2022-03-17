@@ -1,6 +1,6 @@
 # WazirX Portfolio Tracker
 
-**Free and open source solution to track your Wazirx Portfolio.**  
+**Free and open source solution to track your [Wazirx](https://wazirx.com/invite/7jk6edj7) Portfolio.**  
 
 ![wazirx rofit tracker thumbnail](screenshots/table-view.png "Sample Portfolio Overview")
 
@@ -23,7 +23,7 @@ It is a simple tool to take a quick snap of your portfolio.
 
 ## Demo
 
-- You can see a live preview from [here](https://www.webhat.in/wazirx-portfolio-tracker/)
+- You can see a live preview from [here](https://www.webhat.in/wazirx-portfolio-tracker/?utm_source=github&utm_medium=readme&utm_campaign=demo&utm_id=wrx)
 - You can also check this [screenshot](screenshots/full-page-view.png)
 
 ## Installation

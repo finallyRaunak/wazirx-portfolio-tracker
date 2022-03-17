@@ -76,7 +76,7 @@ else {
                             <!-- Inline Layout -->
                             <div class="row push">
                                 <div class="col-lg-12">
-                                    <p>To use this tool you have to get the WazirX API credentials from <a href="https://wazirx.com/blog/create-wazirx-api-key/" target="_blank" rel="nofollow" title="How to create WazirX API Key?">here</a>. after getting that copy-paste it over here <em>also store it at your end for future use</em>.</p>
+                                    <p>To use this tool you have to get the <a href="https://wazirx.com/invite/7jk6edj7" target="_blank" rel="nofollow" title="WazirX Signup">WazirX</a> API credentials from <a href="https://wazirx.com/blog/create-wazirx-api-key/" target="_blank" rel="nofollow" title="How to create WazirX API Key?">here</a>. after getting that copy-paste it over here <em>also store it at your end for future use</em>.</p>
                                     <p>Select the currency/trading pair that you generally use for buying crypto then fill the API Key and API Secret and hit the "Fetch Orders" button. That's it within a few seconds it will pull all the orders and will do a heavy calculation in the backend and will display the report below.</p>
                                 </div>
                                 <div class="col-lg-12 space-y-2">
@@ -165,7 +165,7 @@ else {
                                     <span class="fa-li">
                                         <i class="fa fa-arrow-right"></i>
                                     </span>
-                                    This tool only considers the trade/order that happen or executed in the WazirX platform. if you had transferred it from Binance and or from any other platform then this tool will not be able to give you the correct result for that specific coin as there is no API to pull those details.
+                                    This tool only considers the trade/order that happen or executed in the <a href="https://wazirx.com/invite/7jk6edj7" target="_blank" rel="nofollow" title="WazirX">WazirX</a> platform. if you had transferred it from <a href="https://accounts.binance.com/en/register?ref=405374251" target="_blank" rel="nofollow" title="Binance Signup">Binance</a> and or from any other platform then this tool will not be able to give you the correct result for that specific coin as there is no API to pull those details.
                                 </li>
                                 <li>
                                     <span class="fa-li">
